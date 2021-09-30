@@ -1,0 +1,146 @@
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: Gotham Rounded, sans-serif;
+    font-weight: normal;
+  }
+
+body {
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to right, #00AAFF, #00FF6C);
+  }
+  
+  .container {
+    display: grid;
+    justify-content: center;
+    align-content:flex-start;
+    max-height: 100vh;
+    border: 1px solid white;
+    
+  }
+
+  .total-container{
+    display: grid;
+    justify-content: center;
+    align-content:flex-start;
+    min-height: 100vh;
+    border: 2px solid white;
+  }
+
+  input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+
+  ul{
+    list-style: none;
+    list-style-position: outside;
+  }
+
+  .add-todo{
+    display:flex;
+  }
+
+  li{
+    padding: 10px 0 10px 5px ;
+    /* padding-left: 10px; */
+    border-bottom: 1px solid #eee;
+    border-left: 1px solid #eee;
+    border-top: 1px solid #eee;
+    border-right: 1px solid #eee;
+    font-weight: 400;
+    background-color:  #5fb683;
+    font-size: 2em;
+    max-width: 400px;
+  }
+
+  .button1 {
+    background-color: #4CAF50;
+    font-size: 15px;
+    padding: 10px 24px;
+    border-radius: 8px;
+    transition-duration: 0.4s;
+  }
+
+  .button1:hover {
+    background-color: #4CAF50; 
+    color: white;
+  }
+
+
+  .button2 {
+    background-color: #f44336;
+    font-size: 15px;
+    padding: 10px 24px;
+    border-radius: 8px;
+    transition-duration: 0.4s;
+   
+    
+  }
+
+  .button2:hover {
+    background-color: #833832; 
+    color: white;
+  }
+
+  .button3 {
+    background-color: #cfc033;
+    font-size: 15px;
+    padding: 10px 24px;
+    border-radius: 8px;
+    transition-duration: 0.4s;
+    padding-right: 30px;
+    max-width: auto;
+    max-height: 45px;
+    /* display: flex;
+    justify-content: right; */
+  }
+  .button3:hover {
+    background-color: #998e2e;
+    color: white;
+  }
+
+  .button4 {
+    background-color: #f44336;
+    font-size: 15px;
+    padding: 10px 24px;
+    border-radius: 8px;
+    transition-duration: 0.4s;
+    max-width: auto;
+    max-height: 45px;
+  }
+
+  .button4:hover {
+    background-color: #833832;
+    color: white;
+  }
+
+ .single-task{
+  color: navy;
+  text-indent: 30px;
+  text-transform: uppercase;
+  
+ }
+
+ .single-task.dragging {
+  opacity: .5;
+}
+
+ .hiddenclearall{
+   display: none;
+ }
+
+ .buttonnone{
+      display: none;
+      font-size: 0px;
+ }
+
+ .editMode{
+   display: flex;
+   justify-content: space-around;
+   cursor: move;
+ }
+
